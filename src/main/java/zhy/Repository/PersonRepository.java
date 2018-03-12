@@ -1,10 +1,13 @@
-package zhy;
+package zhy.Repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
+
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Repository;
+import zhy.model.Person;
 
 import javax.annotation.Resource;
 
@@ -14,7 +17,7 @@ import javax.annotation.Resource;
  * Describe:
  */
 @Repository
-public class PersonDao {
+public class PersonRepository {
 
     /**
      * SpringBoot 已为我们配置 StringRedisTemplate，在此处可以直接注入

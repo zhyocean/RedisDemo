@@ -1,8 +1,10 @@
-package zhy;
+package zhy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import zhy.model.Person;
+import zhy.Repository.PersonRepository;
 
 /**
  * @author: zhangocean
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DataController {
 
     @Autowired
-    PersonDao personDao;
+    PersonRepository personDao;
 
     /**
      * 访问 http://localhost:8080/set，查看 RedisClient可发现字符存储在 Redis 中

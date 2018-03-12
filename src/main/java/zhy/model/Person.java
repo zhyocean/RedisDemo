@@ -1,4 +1,4 @@
-package zhy;
+package zhy.model;
 
 import java.io.Serializable;
 
